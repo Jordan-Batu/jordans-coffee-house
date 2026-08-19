@@ -4,7 +4,7 @@ body {
     color: #4b2e20;
     margin: 0;
     padding: 20px;
-    text-align: center;
+    text-align: cente
 }
 
 h1 {
@@ -82,4 +82,24 @@ article:hover {
 nav a:hover{
     background-color:#6f4e37;
     color:white;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
 }
