@@ -74,3 +74,45 @@ footer{
     margin-top:30px;
     padding:15px;
 }
+
+/* ORDER ENQUIRY FORM */
+
+.order-form {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.order-form input[type="number"],
+.order-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+    border: 1px solid #c9a98a;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.order-form fieldset {
+    border: 1px solid #c9a98a;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.order-form legend {
+    font-weight: bold;
+    color: #6f4e37;
+}
+
+.order-form button {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #5a3f2c;
+}

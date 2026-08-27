@@ -60,4 +60,59 @@
     </footer>
 
 </body>
+<section>
+    <h2>Classic Latte</h2>
+
+    <!-- product details -->
+
+</section>
+
+<section class="order-form">
+    <h2>Order Enquiry Form</h2>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+        </p>
+
+        <fieldset>
+            <legend>Delivery Method</legend>
+
+            <input type="radio" id="standard" name="delivery" value="standard" required>
+            <label for="standard">Standard Delivery</label><br>
+
+            <input type="radio" id="express" name="delivery" value="express">
+            <label for="express">Express Delivery</label><br>
+
+            <input type="radio" id="pickup" name="delivery" value="pickup">
+            <label for="pickup">Store Pickup</label>
+        </fieldset>
+
+        <p><strong>Optional Extras:</strong></p>
+
+        <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrap">
+        <label for="gift-wrap">Gift Wrapping</label><br>
+
+        <input type="checkbox" id="express-handling" name="extras" value="express-handling">
+        <label for="express-handling">Express Handling</label><br>
+
+        <input type="checkbox" id="thank-you-note" name="extras" value="thank-you-note">
+        <label for="thank-you-note">Thank You Note</label><br><br>
+
+        <p>
+            <label for="order-email">Contact Email:</label>
+            <input type="email" id="order-email" name="order-email" required>
+        </p>
+
+        <button type="submit">Send Enquiry</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 Jordan's Coffee House</p>
+</footer>
+
+</body>
 </html>
