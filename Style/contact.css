@@ -56,7 +56,11 @@ nav a {
 legend {
     font-weight: bold;
     color: #6f4e37;
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
 }
+
 footer {
     margin-top: 30px;
     padding: 15px;
