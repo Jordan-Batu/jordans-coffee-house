@@ -7,30 +7,76 @@
     <link rel="stylesheet" href="Style/contact.css">
 </head>
 <body>
-    <h1>Jordan's Coffee House</h1>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Jordan's Coffee House</h1>
 
-<main>
-    <section>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or inquiries, feel free to reach out to us through the following contact information:</p>
-        <ul>
-            <li>Email: jordanbatu7@gmail.com</li>
-            <li>Phone: +63 920 796 8816</li>
-            <li>Facebook: Jordan's Coffee House</li>
-        </ul>
-    </section>
-</main>
- <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+
+            <p>
+                If you have any questions or inquiries, feel free to reach out
+                to us through the following contact information:
+            </p>
+
+            <ul>
+                <li>Email: jordanbatu7@gmail.com</li>
+                <li>Phone: +63 920 796 8816</li>
+                <li>Facebook: Jordan's Coffee House</li>
+            </ul>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Your Details</legend>
+
+                    <p>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="subject">Subject</label><br>
+                        <select id="subject" name="subject">
+                            <option value="product-question">Product Question</option>
+                            <option value="order-status">Order Status</option>
+                            <option value="wholesale-inquiry">Wholesale Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </p>
+
+                    <button type="submit">Send Message</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
         <p>&copy; 2026 Jordan's Coffee House</p>
     </footer>
+
 </body>
 </html>
