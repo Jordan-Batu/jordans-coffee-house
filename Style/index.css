@@ -67,6 +67,16 @@ article img {
     border-radius: 8px;
 }
 
+article img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
 article:hover {
     background-color: #f9ead8;
 }
