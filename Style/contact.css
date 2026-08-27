@@ -53,7 +53,10 @@ nav a {
     color: #6f4e37;
     font-weight: bold;
 }
-
+legend {
+    font-weight: bold;
+    color: #6f4e37;
+}
 footer {
     margin-top: 30px;
     padding: 15px;
