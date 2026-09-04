@@ -1,3 +1,7 @@
+:root{
+    --brand:#6f4e37;
+}
+
 body{
     font-family: Arial, sans-serif;
     background-color:#f3e5d0;
@@ -7,7 +11,7 @@ body{
 }
 
 h1{
-    background-color:#6f4e37;
+    background-color:var(--brand);
     color:white;
     padding:20px;
 }
@@ -36,7 +40,7 @@ table{
 }
 
 th{
-    background-color:#6f4e37;
+    background-color:var(--brand);
     color:white;
     padding:10px;
 }
@@ -58,7 +62,7 @@ nav li{
 
 nav a{
     text-decoration:none;
-    color:#6f4e37;
+    color:var(--brand);
     font-weight:bold;
     padding:8px 12px;
     border-radius:5px;
@@ -66,13 +70,29 @@ nav a{
 }
 
 nav a:hover{
-    background-color:#6f4e37;
+    background-color:var(--brand);
     color:white;
 }
 
 footer{
     margin-top:30px;
     padding:15px;
+}
+
+/* PRODUCT CARDS */
+
+.product-card {
+    background-color: #fff8ef;
+    border-radius: 10px;
+    padding: 16px;
+    border-left: 5px solid var(--brand);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.product-card .product-name {
+    font-size: 1.25rem;
+    color: var(--brand);
 }
 
 /* ORDER ENQUIRY FORM */
@@ -95,17 +115,34 @@ footer{
 .order-form fieldset {
     border: 1px solid #c9a98a;
     border-radius: 5px;
-    padding: 10px;
+    padding: 16px;
     margin-bottom: 15px;
 }
 
 .order-form legend {
     font-weight: bold;
-    color: #6f4e37;
+    color: var(--brand);
+}
+
+
+.order-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+    border: 1px solid #c9a98a;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.order-form input:focus,
+.order-form textarea:focus {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
 }
 
 .order-form button {
-    background-color: #6f4e37;
+    background-color: var(--brand);
     color: white;
     border: none;
     padding: 10px 15px;

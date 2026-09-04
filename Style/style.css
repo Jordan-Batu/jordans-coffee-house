@@ -103,23 +103,25 @@ footer {
 ========================= */
 
 /* Product Cards */
-article {
+.product-card {
     display: inline-block;
     vertical-align: top;
     width: 280px;
     min-height: 390px;
     margin: 10px;
-    padding: 15px;
+    padding: 16px;
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
+    border-left: 5px solid var(--brand-color);
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-article:hover {
+.product-card:hover {
     background-color: #f9ead8;
 }
 
-article img {
+.product-card img {
     display: block;
     width: 100%;
     max-width: 220px;
@@ -128,12 +130,17 @@ article img {
     margin: 10px auto;
 }
 
-article p:first-of-type {
+.product-card .product-name {
+    font-size: 1.25rem;
+    color: var(--brand-color);
+}
+
+.product-card p:first-of-type {
     font-weight: bold;
     color: var(--brand-color);
 }
 
-article a {
+.product-card a {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 12px;
@@ -192,6 +199,25 @@ fieldset textarea {
     padding: 8px;
     font: inherit;
 }
+
+.contact-form button {
+    background-color: var(--brand-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--dark-ink);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
+}
 /* OrderForms */
 .order-form {
     text-align: left;
@@ -241,7 +267,7 @@ section ul {
 
 /* Responsive */
 @media (max-width: 768px) {
-    article {
+    .product-card {
         display: block;
         width: 100%;
         min-height: auto;

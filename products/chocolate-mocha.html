@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Mocha | Jordan's Coffee House</title>
+    <link rel="stylesheet" href="../Style/chocolate-mocha.css">
+</head>
+<body>
+    <header>
+        <h1>Jordan's Coffee House</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Chocolate Mocha</h2>
+            <img src="../image/chocolate mocha.jpg" alt="A cup of chocolate mocha coffee">
+            <p>A delicious combination of espresso, chocolate, steamed milk, and foam.</p>
+            <table>
+                <tr><th>Specification</th><th>Details</th></tr>
+                <tr><td>Ingredients</td><td>Espresso, Chocolate, Steamed Milk, Foam</td></tr>
+                <tr><td>Size</td><td>12 oz</td></tr>
+                <tr><td>Price</td><td>₱140</td></tr>
+            </table>
+        </section>
+
+        <section class="order-form">
+            <h2>Order Enquiry Form</h2>
+            <form action="#" method="post">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                <fieldset>
+                    <legend>Delivery Method</legend>
+                    <label><input type="radio" name="delivery" value="standard" required> Standard Delivery</label>
+                    <label><input type="radio" name="delivery" value="express"> Express Delivery</label>
+                    <label><input type="radio" name="delivery" value="pickup"> Store Pickup</label>
+                </fieldset>
+                <label for="order-email">Contact Email:</label>
+                <input type="email" id="order-email" name="order-email" required>
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 Jordan's Coffee House</p></footer>
+</body>
+</html>
