@@ -3,116 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Latte</title>
+    <title>Classic Latte | Jordan's Coffee House</title>
     <link rel="stylesheet" href="../Style/classic-latte.css">
 </head>
 <body>
+    <header>
+        <h1>Jordan's Coffee House</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Jordan's Coffee House</h1>
+    <main>
+        <section>
+            <h2>Classic Latte</h2>
+            <img src="../image/latte.jpg" alt="A freshly brewed classic latte">
+            <p>The Classic Latte is a smooth espresso drink blended with steamed milk and topped with creamy foam. It offers a rich, balanced flavor that is perfect for coffee lovers.</p>
+            <table>
+                <tr><th>Specification</th><th>Details</th></tr>
+                <tr><td>Ingredients</td><td>Espresso, Steamed Milk, Foam</td></tr>
+                <tr><td>Size</td><td>12 oz</td></tr>
+                <tr><td>Color</td><td>Light Brown</td></tr>
+                <tr><td>Price</td><td>₱120</td></tr>
+            </table>
+        </section>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <section class="order-form">
+            <h2>Order Enquiry Form</h2>
+            <form action="#" method="post">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                <fieldset>
+                    <legend>Delivery Method</legend>
+                    <label><input type="radio" name="delivery" value="standard" required> Standard Delivery</label>
+                    <label><input type="radio" name="delivery" value="express"> Express Delivery</label>
+                    <label><input type="radio" name="delivery" value="pickup"> Store Pickup</label>
+                </fieldset>
+                <label for="order-email">Contact Email:</label>
+                <input type="email" id="order-email" name="order-email" required>
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </section>
+    </main>
 
-    </article>
-    <section>
-        <h2>Classic Latte</h2>
-
-        <img src="../image/latte.jpg"
-             alt="A freshly brewed classic latte">
-
-        <p>
-            The Classic Latte is a smooth espresso drink blended with
-            steamed milk and topped with creamy foam. It offers a rich,
-            balanced flavor that is perfect for coffee lovers.
-        </p>
-
-        <table>
-            <tr>
-                <th>Specification</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Ingredients</td>
-                <td>Espresso, Steamed Milk, Foam</td>
-            </tr>
-            <tr>
-                <td>Size</td>
-                <td>12 oz</td>
-            </tr>
-            <tr>
-                <td>Color</td>
-                <td>Light Brown</td>
-            </tr>
-            <tr>
-                <td>Price</td>
-                <td>₱120</td>
-            </tr>
-        </table>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Jordan's Coffee House</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Jordan's Coffee House</p></footer>
 </body>
-<section>
-    <h2>Classic Latte</h2>
-
-    <!-- product details -->
-
-</section>
-
-<section class="order-form">
-    <h2>Order Enquiry Form</h2>
-
-    <form action="#" method="post">
-
-        <p>
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="20" required>
-        </p>
-
-        <fieldset>
-            <legend>Delivery Method</legend>
-
-            <input type="radio" id="standard" name="delivery" value="standard" required>
-            <label for="standard">Standard Delivery</label><br>
-
-            <input type="radio" id="express" name="delivery" value="express">
-            <label for="express">Express Delivery</label><br>
-
-            <input type="radio" id="pickup" name="delivery" value="pickup">
-            <label for="pickup">Store Pickup</label>
-        </fieldset>
-
-        <p><strong>Optional Extras:</strong></p>
-
-        <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrap">
-        <label for="gift-wrap">Gift Wrapping</label><br>
-
-        <input type="checkbox" id="express-handling" name="extras" value="express-handling">
-        <label for="express-handling">Express Handling</label><br>
-
-        <input type="checkbox" id="thank-you-note" name="extras" value="thank-you-note">
-        <label for="thank-you-note">Thank You Note</label><br><br>
-
-        <p>
-            <label for="order-email">Contact Email:</label>
-            <input type="email" id="order-email" name="order-email" required>
-        </p>
-
-        <button type="submit">Send Enquiry</button>
-    </form>
-</section>
-
-<footer>
-    <p>&copy; 2026 Jordan's Coffee House</p>
-</footer>
-
-</body>
-</html>>
+</html>
