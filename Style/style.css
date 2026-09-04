@@ -1,0 +1,219 @@
+/* =========================
+   1. VARIABLES
+========================= */
+:root {
+    --brand-color: #6f4e37;
+    --dark-ink: #4b2e20;
+    --muted-grey: #777;
+    --light-bg: #f3e5d0;
+    --card-bg: #fff8ef;
+    --border-color: #c9a98a;
+}
+
+/* =========================
+   2. BASE STYLES
+========================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--light-bg);
+    color: var(--dark-ink);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: var(--brand-color);
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+}
+
+h2,
+h3 {
+    color: var(--brand-color);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   3. LAYOUT REGIONS
+========================= */
+
+/* HEADER */
+header {
+    margin-bottom: 20px;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--brand-color);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--brand-color);
+    color: white;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+}
+
+/* =========================
+   4. COMPONENTS
+========================= */
+
+/* Product Cards */
+article {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    min-height: 390px;
+    margin: 10px;
+    padding: 15px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+article:hover {
+    background-color: #f9ead8;
+}
+
+article img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 180px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+article p:first-of-type {
+    font-weight: bold;
+    color: var(--brand-color);
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: var(--brand-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: var(--brand-color);
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+/* Forms */
+.order-form {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.order-form input[type="number"],
+.order-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.order-form fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.order-form legend,
+legend {
+    color: var(--brand-color);
+    font-weight: bold;
+}
+
+.order-form button {
+    background-color: var(--brand-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #5a3f2c;
+}
+
+/* Lists */
+section ul {
+    text-align: left;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    article {
+        display: block;
+        width: 100%;
+        min-height: auto;
+        margin: 15px 0;
+    }
+}
