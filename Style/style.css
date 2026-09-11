@@ -118,18 +118,19 @@ footer {
 ========================= */
 
 /* Product Cards */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .product-card {
-    display: inline-block;
-    vertical-align: top;
-    width: 280px;
-    height: 590px;
-    margin: 10px;
+    flex: 1 1 240px;
     padding: 16px;
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-left: 5px solid var(--brand-color);
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .product-card:hover {
