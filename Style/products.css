@@ -12,11 +12,12 @@
 
 .page {
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     grid-template-areas:
-        "masthead masthead"
-        "side main"
-        "foot foot";
+        "masthead"
+        "main"
+        "side"
+        "foot";
     gap: 16px;
     max-width: 1200px;
     margin: 0 auto;
@@ -63,6 +64,8 @@
 main {
     grid-area: main;
     min-width: 0;
+    max-width: none;
+    margin: 0;
 }
 
 footer {
@@ -107,17 +110,19 @@ h1 {
 
 .site-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0;
 }
 
 
 .site-header nav ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 8px;
     list-style: none;
     padding: 0;
     margin: 15px 0;
@@ -140,11 +145,6 @@ nav a {
 nav a:hover {
     background-color: var(--brand);
     color: white;
-}
-
-main {
-    max-width: 700px;
-    margin: auto;
 }
 
 section {
@@ -232,29 +232,28 @@ footer {
     padding: 15px;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
     .page {
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: 220px minmax(0, 1fr);
         grid-template-areas:
-            "masthead"
-            "side"
-            "main"
-            "foot";
+            "masthead masthead"
+            "side main"
+            "foot foot";
     }
 
     .site-header {
-        flex-direction: column;
-        gap: 12px;
-        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
     }
 
     .site-header nav ul {
-        flex-wrap: wrap;
-        gap: 8px;
+        gap: 20px;
     }
 
     main {
-        max-width: none;
-        margin: 0;
+        max-width: 700px;
+        margin: auto;
     }
 }
