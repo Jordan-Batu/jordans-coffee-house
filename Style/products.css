@@ -10,6 +10,65 @@
     box-sizing: border-box;
 }
 
+.page {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-areas:
+        "masthead masthead"
+        "side main"
+        "foot foot";
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-header {
+    grid-area: masthead;
+}
+
+.shop-sidebar {
+    grid-area: side;
+    align-self: start;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.shop-sidebar ul {
+    padding-left: 20px;
+}
+
+.shop-sidebar a {
+    display: inline-block;
+    padding: 3px 0;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.shop-sidebar a:hover {
+    border-bottom-color: var(--brand);
+}
+
+.shop-sidebar li {
+    margin: 8px 0;
+}
+
+.shop-sidebar h2 {
+    margin-top: 0;
+}
+
+main {
+    grid-area: main;
+    min-width: 0;
+}
+
+footer {
+    grid-area: foot;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -18,6 +77,22 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
+}
+
+a {
+    color: var(--brand);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover {
+    color: var(--dark-ink);
+}
+
+a:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
 }
 
 h1 {
@@ -53,10 +128,13 @@ h1 {
 }
 
 nav a {
+    display: block;
     color: var(--brand);
     font-weight: bold;
     text-decoration: none;
     padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -152,4 +230,31 @@ td {
 footer {
     margin-top: 30px;
     padding: 15px;
+}
+
+@media (max-width: 700px) {
+    .page {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "masthead"
+            "side"
+            "main"
+            "foot";
+    }
+
+    .site-header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .site-header nav ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    main {
+        max-width: none;
+        margin: 0;
+    }
 }
