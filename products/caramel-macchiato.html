@@ -9,7 +9,7 @@
 <body>
     <div class="page">
     <header class="site-header">
-        <h1>Jordan's Coffee House</h1>
+        <h1 id="shop-name">Jordan's Coffee House</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -39,7 +39,7 @@
                 <tr><th>Specification</th><th>Details</th></tr>
                 <tr><td>Ingredients</td><td>Espresso, Steamed Milk, Caramel</td></tr>
                 <tr><td>Size</td><td>12 oz</td></tr>
-                <tr><td>Price</td><td>₱150</td></tr>
+                <tr><td>Price</td><td data-price="150">₱150</td></tr>
             </table>
         </section>
 
@@ -48,6 +48,7 @@
             <form action="#" method="post">
                 <label for="quantity">Quantity:</label>
                 <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+                <p>Estimated subtotal: <span id="subtotal">₱0.00</span></p>
                 <fieldset>
                     <legend>Delivery Method</legend>
                     <label><input type="radio" name="delivery" value="standard" required> Standard Delivery</label>
@@ -61,7 +62,8 @@
         </section>
     </main>
 
-    <footer><p>&copy; 2026 Jordan's Coffee House</p></footer>
+    <footer><p id="copyright">&copy; 2026 Jordan's Coffee House</p></footer>
     </div>
+    <script src="../script.js"></script>
 </body>
 </html>
